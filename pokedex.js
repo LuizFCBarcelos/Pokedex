@@ -23,7 +23,6 @@ async function loadPokemons() {
       <div>${data.name}</div>
     `;
 
-    // Atualizado: busca dados da API ao clicar
     pokemonItem.addEventListener("click", async () => {
       try {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
